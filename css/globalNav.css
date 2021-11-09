@@ -15,7 +15,7 @@ body {
   }
 
   .topnav > .misc-pic img {
-    margin-top: 5px;
+    /* margin-top: 5px; */
     margin-bottom: 20px;
     border-radius: 50%;
   }
