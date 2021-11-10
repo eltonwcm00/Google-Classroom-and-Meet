@@ -14,9 +14,11 @@
         <a href="#about"><p>SEND ASSIGNMENT<br/> REMINDER</p></a>
         <div class="dropdown">
           <button class="dropbtn">CREATE ACCOUNT</button>
-          <div class="dropdown-content">
+          <div class="dropdown-content ">
+            <div class="triangle-up"></div>
+            <div class="creation_acc">.</div>
             <a href="#aboutthis"><p>Register For Teacher</p></a>
-            <a href="#"><p>Register For Student</p></a>
+            <a class="creation_acc_stud" href="#" ><p>Register For Student</p></a>
           </div>
         </div>
         <a href="#news"><p>LOGOUT</p></a>

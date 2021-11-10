@@ -34,7 +34,7 @@ body {
   }
 
   .topnav a:nth-child(even) {
-    background-color: #FBB117 !important;
+    background-color: #FBB117;
   }
   
   .topnav a:hover {
