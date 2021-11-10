@@ -1,0 +1,31 @@
+h1 {
+    font-weight: bold;
+}
+label {
+    font-weight: 400;
+}
+.wrapper {
+    background-color: black;
+    margin-top: 10px;
+}
+.wrapper_sub {
+    background-color: white;
+    max-width: 98.5%;
+    padding-top: 60px;
+    padding-bottom: 23.5%;
+}
+.form_placement {
+    margin: 30px 0;
+}
+.form-control {
+    width: 30%;
+    background-color: #F5F5F5;
+    border: none;
+}
+.btn_placement {
+    float: right !important;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 19%;
+    border: none;
+}
