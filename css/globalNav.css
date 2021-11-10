@@ -15,7 +15,7 @@ body {
   }
 
   .topnav > .misc-pic img {
-    /* margin-top: 5px; */
+
     margin-bottom: 20px;
     border-radius: 50%;
   }
@@ -38,11 +38,44 @@ body {
   }
   
   .topnav a:hover {
-    /* background-color: #ddd; */
+ 
     color: black;
   }
   
   .topnav a.active {
-    /* background-color: #04AA6D; */
+
     color: white;
   }
+
+
+  body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.bottom-bubble img {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.hi-title {
+    color: #FFFFFF;
+    font-family: 'Pristina';
+    font-size: 96px;
+    margin-top: 6%;
+    margin-left: 10%;
+}
+
+.hi-title h2 {
+    font-size: 65px;
+}
+
+.admin-triangle  {
+    background-image: url("../../pic/homepage_triangle.png");
+    background-repeat: no-repeat;
+    margin-left: 38%;
+
+}
+
+

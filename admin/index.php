@@ -7,9 +7,8 @@
         <link rel="stylesheet" href="../css/admin/homepage.css" /> 
     </head>
     <body>
-        <?php include '../global/adminNav.php';?>
+        <?php include '../shared/adminNav.php';?>
         <div class="container-xxl">
-            
             <div class="row">
                 <div class="col-6">
                     <div class="hi-title">
@@ -23,7 +22,6 @@
                     </div>
                 </div>
             </div>
-            
         </div>
         <div class="bottom-bubble">
             <img src="../pic/bottom_bubble.png" />

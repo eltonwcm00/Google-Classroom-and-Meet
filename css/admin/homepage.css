@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: black;
     overflow-x: hidden;
 }
@@ -23,9 +23,49 @@ body {
 
 .admin-triangle  {
     background-image: url("../../pic/homepage_triangle.png");
-    /* background-color: white; */
     background-repeat: no-repeat;
     margin-left: 38%;
-    height: 200%;
 
 }
+
+.dropbtn  {
+  background-color: #F5D10D;
+  color: white;
+  padding: 16px;
+  margin-top: 12px;
+  font-size: 16px;
+  border: none;
+  font-size: 14px;
+  color: black;
+  font-weight: bold;  
+}
+
+
+.dropdown {
+  display: inline-block;
+  float: right;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+} 
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 0px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  font-size: 13px;
+  padding-top: 7%;
+  padding-bottom: 0px;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block; } */
