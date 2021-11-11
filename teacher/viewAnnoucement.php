@@ -10,7 +10,51 @@
         <?php include '../shared/teacherNav.php';?>
         <div class="wrapper container-xxl">
             <?php include '../shared/teacherSidebar.php';?>
-            <div class="wrapper_sub container-xl">.</div>
+            <div class="row">
+                <div class="col col-lg-2" style="margin-left: 1%;">
+                    .
+                </div>
+                <div class="col">
+                    <div class="wrapper_sub container-xl">
+                        <div class="wrapper_sub_first" style="background-color: #FFD801;">
+                            <h5>TSE2101 - SOFTWARE ENG. FUND <br/>TC3V</h5>
+                        </div>
+                        <div class="wrapper_sub_second wrapper_sub_second_pos">
+                            <img id="speaker" src="../pic/speaker.png" /> 
+                            <span id="speaker_title" style="font-size: 30px;">Annoucements</span>
+                            <br /> 
+                            <div class="row">
+                                <div class="col">
+                                    <div class="annoucement_details">
+                                        <div class="row">
+                                            <div class="col-4 col-md-1">
+                                                <img style="border-radius: 50%; height: 49px; width: 49px;" src="../pic/teacherA.png" /> 
+                                            </div>
+                                            <div class="col">
+                                                <span id="speaker_title">Madam Jung Ho-yeon</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-4 col-md-1">
+                                               
+                                            </div>
+                                            <div class="col">
+                                                <small>June 23</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    .
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            </div>
         </div>
     </body>
 </html>
