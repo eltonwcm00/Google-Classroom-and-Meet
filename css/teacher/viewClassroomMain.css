@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.bottom-bubble img {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.classroom-wrapper {
+    width: 96px;
+    margin-top: 6%;
+    margin-left: 10%;
+}
+
+.teacher-triangle  {
+    background-image: url('../../pic/homepage_triangle.png');
+    background-repeat: no-repeat;
+    margin-left: 49%;
+    background-size: contain;
+    height: 58%;
+}
+
+.classroom {
+    display: flex;
+}
+
+.dot {
+    height: 50px;
+    width: 50px;
+    background-color: #FAF884;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: 76%;
+    top: 34%;
+}
+
+.card {
+    border: none;
+    border-radius: 18px;
+}
+
+.card_head {
+    color: white;
+    font-weight: bold;
+    background-color: #FF7F50;
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+}
+
+.card_text {
+    font-size: 13px;
+}

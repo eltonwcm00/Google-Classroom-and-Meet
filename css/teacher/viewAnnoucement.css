@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+    overflow-x: hidden;
+    /* display: none; */
+}
+
+.wrapper {
+    background-color: black;
+    margin-top: 10px;
+}
+.wrapper_sub {
+    background-color: white;
+    max-width: 98.5%;
+    padding-top: 60px;
+    padding-bottom: 23.5%;
+}
