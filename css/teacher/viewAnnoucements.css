@@ -1,7 +1,6 @@
 body {
-    background-color: black;
+    background-color: green;
     overflow-x: hidden;
-    /* display: none; */
 }
 
 .wrapper {
@@ -27,6 +26,7 @@ h5 {
 .wrapper_sub_second_pos {
     margin-left: 1%;
     margin-top: 1%;
+    margin-bottom: 6%;
 }
 
 .wrapper_sub_second #speaker {
@@ -34,7 +34,6 @@ h5 {
 }
 
 .wrapper_sub_second #speaker_title {
-    /* font-size: 15px; */
     margin-left: 13px;
     font-weight: 700;
 }
@@ -53,8 +52,30 @@ h5 {
     font-size: 15px !important;
 }
 
-small {
+a {
+    font-size: 13px;
+}
+
+small, a {
     margin-left: 2.5%;
     margin-top: -4%;
-    position: absolute;
+}
+
+small#date{
+    color: darkgray !important;
+    font-weight: 100;
+}
+
+
+.row_pos {
+    margin-top: -3%;
+}
+
+.row_btwn {
+    margin-top: 1%;
+}
+
+/* customised css of a global item */
+.topnav {
+    padding-top: 58px;
 }

@@ -24,7 +24,7 @@ hr.solid {
     max-width: 98.5%;
     padding-top: 60px;
     padding-bottom: 6%;
-    margin-left: 7px !important; /* not working */
+    margin-left: 7px !important; 
     margin-bottom: 12px;
 }
 .column_header {
@@ -33,9 +33,7 @@ hr.solid {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-.column_content {
-    /* background-color: #F5F5F5; */
-}
+
 .left {
     background-color: #1589FF;
 }

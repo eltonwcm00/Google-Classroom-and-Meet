@@ -6,11 +6,11 @@
         <link rel="stylesheet" href="../css/teacher/viewAnnoucements.css" /> 
     </head>
     <body style="background-color: black;">
-    <div style=""><?php include '../shared/teacherNav.php';?>
+    <div style=""><?php include '../shared/studentNav.php';?>
         <div class="wrapper container-xxl">
-        <?php include '../shared/teacherSidebar.php';?>
+        <?php include '../shared/studentSidebar.php';?>
             <div class="row">
-                <div class="col col-lg-2" style="margin-left: 1%;">
+                <div class="col col-lg-2" style="margin-left: -3%;">
                     .
                 </div>
                 <div class="col">
