@@ -16,7 +16,7 @@ body {
   
   .sidenav a {
     padding: 25px 6px 10px 13px;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;

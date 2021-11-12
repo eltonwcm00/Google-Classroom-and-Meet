@@ -1,0 +1,26 @@
+.conversation {
+    color: white;
+    background-color: #F5F5F5;
+    margin-left: 2.5%;
+    width: 25%;
+    border-radius: 6px;
+}
+
+.form-control {
+    width: 75%;
+    background-color: #F5F5F5;
+    border: none;
+    height: 30%;
+}
+
+.form-group {
+    margin-top: 10%;
+}
+
+.btn-primary {
+    float: right;
+    margin-top: -4%;
+    margin-right: 4%;
+    border-radius: 6px;
+    padding: 4px 15px;
+}

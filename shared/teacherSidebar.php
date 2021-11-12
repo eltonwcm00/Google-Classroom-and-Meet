@@ -11,7 +11,7 @@
             <a href="#hello"><p>POST ANNOUNCEMENT</p></a>
             <a href="#"><p>VIEW ANNOUNCEMENT</p></a>
             <a href="#"><p>SEND CHAT MESSAGE</p></a>
-            <a href="#"><p>CREATE CLASSWORK SUBMISSON</p></a>
+            <a href="#"><p>CREATE CLASSWORK <br/>SUBMISSON</p></a>
             <a href="#bitch"><p>VIEW ASSIGNMENT LIST</p></a>
             <a href="#"><p>CREATE MEET</p></a>
             <a href="#"><p>SYNCHRONIZE CALENDAR</p></a>

@@ -4,11 +4,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/student/submitAssignment.css" /> 
+        <link rel="stylesheet" href="../css/student/sendChatMessage.css" /> 
     </head>
     <body style="background-color: black;">
     <div style=""><?php include '../shared/studentNav.php';?>
         <div class="wrapper container-xxl">
-        <?php include '../shared/studentSidebar.php';?>
+            <?php include '../shared/studentSidebar.php';?>
             <div class="row">
                 <div class="col col-lg-2" style="margin-left: -3%;">
                     .
@@ -27,84 +28,61 @@
                                     <div class="annoucement_details">
                                         <div class="row">
                                             <div class="col-4 col-md-1">
-                                                <img style="border-radius: 50%; height: 49px; width: 49px;" src="../pic/teacherA.png" /> 
+                                                <img style="border-radius: 50%; height: 49px; width: 49px;" src="../pic/chat_a.jpg" /> 
                                             </div>
                                             <div class="col">
-                                                <span id="speaker_title">Madam Jung Ho-yeon</span>
+                                                <span id="speaker_title">Student 1</span>
                                             </div>
                                         </div>
                                         <div class="row row_pos">
                                             <div class="col-4 col-md-1">
                                             </div>
                                             <div class="col">
-                                                <small id="date">June 23</small>
+                                                <div class="conversation">.</div>
                                             </div>
                                         </div>
                                         <br/>
-                                        <!-- <div class="row row_pos">
-                                            <div class="col-4 col-md-1">          
-                                            </div>
-                                            <div class="col" style="">
-                                                <small>The Meet link for tonight's Quiz 1</small>
-                                                <br/><a href="#test" class="testing">https://meet.google.com/yty-mazs-qfh</a>
-                                                <br/><br/>
-                                                <small>Quiz 1</small><br/>
-                                                <small>Time: 8pm (15 min)</small><br/>
-                                                <small>Topic: Lecture & Lab 01-04</small><br/>
-                                                <small>Questions 10</small><br/>   
-                                                <small>Format: MCQ, checkboxes, fill in the blank</small><br/>       
-                                            </div>
-                                        </div> -->
                                     </div>
                                 </div>
                                 <div class="col">   
                                 </div>
                             </div>
-
 
                             <div class="row row_btwn">
                                 <div class="col">
                                     <div class="annoucement_details">
                                         <div class="row">
                                             <div class="col-4 col-md-1">
-                                                <img style="border-radius: 50%; height: 49px; width: 49px;" src="../pic/teacherA.png" /> 
+                                                <img style="border-radius: 50%; height: 49px; width: 49px;" src="../pic/chat_b.jpg" /> 
                                             </div>
                                             <div class="col">
-                                                <span id="speaker_title">Madam Jung Ho-yeon</span>
+                                                <span id="speaker_title">Student 2</span>
                                             </div>
                                         </div>
                                         <div class="row row_pos">
                                             <div class="col-4 col-md-1">
                                             </div>
-                                            <div class="col">
-                                                <small id="date">June 19</small>
+                                            <div class="col">   
+                                                <div class="conversation">.</div>
                                             </div>
                                         </div>
                                         <br/>
-                                        <!-- <div class="row row_pos">
-                                            <div class="col-4 col-md-1">          
-                                            </div>
-                                            <div class="col" style="">
-                                                <small>The Meet link for tonight's Quiz 1</small>
-                                                <br/><a href="#test" class="testing">https://meet.google.com/yty-mazs-qfh</a>
-                                                <br/><br/>
-                                                <small>Tutorial 8</small><br/>
-                                                <small>Questions 10</small><br/>   
-                                                <small>Format: MCQ, checkboxes, fill in the blank</small><br/>       
-                                            </div>
-                                        </div> -->
                                     </div>
                                 </div>
                                 <div class="col">   
                                 </div>
                             </div>
-
-                            
+                            <form  class="form_inline" method="POST">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Type something here..">
+                                </div>
+                                <button type="submit" class="btn btn-primary ">SEND</button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-           
+
             </div>
         </div>
     </body>
