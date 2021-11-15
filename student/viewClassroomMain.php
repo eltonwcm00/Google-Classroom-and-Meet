@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="../css/teacher/viewClassroomMain.css" /> 
     </head>
     <body>
-        <?php include '../shared/studentNav.php';?>
+        <?php include '../shared/test.php';?>
         <style>
             .dropdown {
                 margin-top: 0;

@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="../css/student/sendChatMessage.css" /> 
     </head>
     <body style="background-color: black;">
-    <?php include '../shared/studentNav.php';?>
+    <?php include '../shared/test.php';?>
         <div class="wrapper container-xxl">
             <?php include '../shared/studentSidebar.php';?>
             <div class="row">
