@@ -8,6 +8,14 @@
     </head>
     <body>
         <?php include '../shared/studentNav.php';?>
+        <style>
+            .dropdown {
+                margin-top: 0;
+            }
+            .topnav {
+                overflow: hidden;
+            }
+        </style>
         <div class="container-xxl">
             <div class="row">
                 <div class="col-6">

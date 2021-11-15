@@ -5,8 +5,10 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/teacher/viewAnnoucements.css" /> 
     </head>
+    
     <body style="background-color: black;">
-    <div style=""><?php include '../shared/studentNav.php';?>
+    <?php include '../shared/studentNav.php';?>
+
         <div class="wrapper container-xxl">
         <?php include '../shared/studentSidebar.php';?>
             <div class="row">

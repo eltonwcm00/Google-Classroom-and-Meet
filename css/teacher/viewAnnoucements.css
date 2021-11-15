@@ -6,6 +6,7 @@ body {
 .wrapper {
     background-color: black;
     margin-top: 10px;
+    /*************************/
 }
 .wrapper_sub {
     background-color: white;

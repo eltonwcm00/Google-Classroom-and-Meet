@@ -10,7 +10,7 @@
         <div class="wrapper container-xxl">
         <?php include '../shared/teacherSidebar.php';?>
             <div class="row">
-                <div class="col col-lg-2" style="margin-left: 1%;">
+                <div class="col col-lg-2" style="margin-left: -3%;">
                     .
                 </div>
                 <div class="col">
