@@ -55,12 +55,14 @@ h5 {
 
 a {
     font-size: 13px;
+    margin-top: -4%;
 }
 
-small, a {
+small{
     margin-left: 2.5%;
     margin-top: -4%;
 }
+
 
 small#date{
     color: darkgray !important;

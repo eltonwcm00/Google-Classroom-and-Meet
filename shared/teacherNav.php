@@ -6,10 +6,10 @@
     </head>
     <body>
       <div class="topnav">
-        <a class="misc-pic" href="#home"><img src="../pic/profilepic.png" height="40px" width="40px" /></a>
-        <a href="#about"><p>JOIN CLASSROOM<br/> REMINDER</p></a>
-        <a href="#contact"><p>CREATE CLASSROOM</p></a>
-        <a href="#news"><p>LOGOUT</p></a>
+        <a id="main_link" class="misc-pic" href="#home"><img src="../pic/profilepic.png" height="40px" width="40px" /></a>
+        <a id="main_link" href="#about"><p>JOIN CLASSROOM<br/> REMINDER</p></a>
+        <a id="main_link" href="#contact"><p>CREATE CLASSROOM</p></a>
+        <a id="main_link" href="#news"><p>LOGOUT</p></a>
       </div>
     </body>
   </html>

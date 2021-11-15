@@ -52,20 +52,20 @@ h5 {
     font-size: 15px !important;
 }
 
-a {
-    font-size: 13px;
-}
-
-small, a {
+small {
     margin-left: 2.5%;
     margin-top: -4%;
+}
+
+a {
+    margin-top: -4%;  
+    font-size: 13px;
 }
 
 small#date{
     color: darkgray !important;
     font-weight: 100;
 }
-
 
 .row_pos {
     margin-top: -3%;
