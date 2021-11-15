@@ -38,7 +38,7 @@
               <div class="col-sm-3 col_1">
                   <img src="../pic/to-do.jpg" width="32px"/>
               </div>
-              <div class="col col_2_left">
+              <div class="col col_2_left" style="background-color: red;">
                   <span>Tutorial 1 - Introduction to Data Structure and Algorithm</span>
                   <br/>
                   <small>Data Structure and Algorithm (DDS1518)</small>
@@ -51,7 +51,7 @@
               <div class="col-sm-3 col_1">
                   <img src="../pic/to-do.jpg" width="32px"/>
               </div>
-              <div class="col col_2_left">
+              <div class="col col_2_left" style="background-color: green;">
                   <span>Tutorial 2 - Android Activity and Intent</span>
                   <br/>
                   <small>Mobile App Development (DIT1518)</small>
@@ -70,16 +70,29 @@
             <div class="triangle-up" style="margin-left: auto; margin-right: 16px;">.</div>
             <div class="reminder_header">Assignment Reminder</div>
             
-            <div class="reminder_header_title">Assigned<hr/></div>
+            <div class="reminder_header_title">This Week<hr/></div>
             
             <div class="content_row row">
               <div class="col-sm-3 col_1">
-                  <img src="../pic/to-do.jpg" width="32px"/>
+                  <img src="../pic/teacherA.png" width="32px"/>
               </div>
               <div class="col col_2_left">
-                  <span>Project Booking Title</span>
+                  <span>Sir Wang 1108</span>
                   <br/>
-                  <small>Object Oriented Programming (DOO1518)</small>
+                  <small>Posted a new assignment: How to play Green Light!, Red Light!</small>
+              </div>
+            </div>
+
+            <div class="reminder_header_title">Next Week<hr/></div>
+
+            <div class="content_row row">
+              <div class="col-sm-3 col_1">
+                  <img src="../pic/chat_b.jpg" width="32px"/>
+              </div>
+              <div class="col col_2_left" >
+                  <span>Madam Jung Ho-yeon</span>
+                  <br/>
+                  <small>Posted a new assignment: Identify which one is tempered glass!</small>
               </div>
             </div>
 
@@ -87,25 +100,12 @@
 
             <div class="content_row row">
               <div class="col-sm-3 col_1">
-                  <img src="../pic/to-do.jpg" width="32px"/>
+                  <img src="../pic/chat_a.jpg" width="32px"/>
               </div>
               <div class="col col_2_left">
-                  <span>Tutorial 1 - Introduction to Data Structure and Algorithm</span>
+                  <span>Madam Lee Ji-eun</span>
                   <br/>
-                  <small>Data Structure and Algorithm (DDS1518)</small>
-              </div>
-            </div>
-
-            <div class="reminder_header_title">Completed<hr/></div>
-
-            <div class="content_row row">
-              <div class="col-sm-3 col_1">
-                  <img src="../pic/to-do.jpg" width="32px"/>
-              </div>
-              <div class="col col_2_left">
-                  <span>Tutorial 2 - Android Activity and Intent</span>
-                  <br/>
-                  <small>Mobile App Development (DIT1518)</small>
+                  <small>Posted a new assignment: OOPDS Assignment 1</small>
               </div>
             </div>
           </div>
