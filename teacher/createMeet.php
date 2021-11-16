@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/teacher/createMeet.css" /> 
+    </head>
+    <body style="background-color: black;">
+    <div style=""><?php include '../shared/teacherNav.php';?>
+        <div class="wrapper container-xxl">
+        <?php include '../shared/teacherSidebar.php';?>
+            <div class="row">
+                <div class="col col-lg-2" style="margin-left: -3%;">
+                    .
+                </div>
+                <div class="col">
+                    <div class="wrapper_sub container-xl">
+                        <div class="wrapper_sub_first" style="background-color: #FFD801;">
+                            <h5>TSE2101 - SOFTWARE ENG. FUND <br/>TC3V</h5>
+                        </div>
+                        <div class="wrapper_sub_second wrapper_sub_second_pos">
+                            <form method="POST">
+                                <h2>Create Meet</h2>
+                                <label1 for="">Meet Title</label1>
+                                <br>
+                                <input type="text" id="meet_title" name="meet_title">
+                                <br><br>
+                                <label1 for="">Meet Code</label1>
+                                <br>
+                                <input type="text" id="code" name="code" placeholder="abc-def-ghi">
+                                <br><br>
+                                <label1 for="">Meet Link</label1>
+                                <br>
+                                <input type="text" id="meet_link" name="meet_link" placeholder="meet.google/abc-def-ghi">
+                                <button3 type="button">Generate</button3>
+                                <br><br>
+                                <label1 for="">Meet Capacity</label1>
+                                <br>
+                                <input type="range" id="capacity" name="capacity">
+                                <br> 
+                                <label2 for="">0 Max</label2>
+                                <p align="right" style="margin-right: 3%; margin-top: 5%;">
+                                    <button type="submit" class="btn btn-secondary">Cancel</button>
+                                    <button type="submit" class="btn btn-primary" style="padding: 6px 21px;">Create</button>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>      
+            </div>
+        </div>
+    </body>
+</html>

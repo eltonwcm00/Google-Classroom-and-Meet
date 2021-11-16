@@ -39,6 +39,19 @@ button {
     font-weight: 800;
 }
 
+button3 {
+    font-family: arial;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #52D017;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 1%;
+  }
+
 h1{
     position: sticky;
     top: 0;
@@ -56,16 +69,23 @@ h3{
 
 h5 {
     font-weight: bold;
+    font-size: 20px;
 }
 
-/* p{
-    column-count: 2;
-} */
+h2 {
+    font-family: arial;
+    font-size: 30px;
+    font-weight: bold;
+}
+p1{
+    align-items: right;
+}
 
 label1{
     font-weight: none;
     font-family: arial;
     font-size: 15px;
+    font-weight: bold;
 }
 label2{
     color: red;
@@ -73,18 +93,17 @@ label2{
     font-family: arial;
     font-size: 15px;
 }
-label3{
-    font-family: arial;
-    font-size: 15px;
-}
 
 input{
-    outline: 0;
-    border-width: 0 0 1px;
-    background-color: rgb(255, 255, 224);
+    /* outline: 0;
+    border-width: 0 0 1px; */
+    background-color: #F5F5F5;
     line-height: 2;
     font-size: 23px;
     width: 430px;
     padding: 0 20px;
-    border-bottom: 1px solid black;
+    border: none;
+    border-radius: 5px;
+
 }
+
