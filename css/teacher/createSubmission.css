@@ -1,0 +1,86 @@
+body {
+    background-color: green;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    background-color: black;
+    margin-top: 10px;
+    /*************************/
+}
+.wrapper_sub {
+    background-color: white;
+    max-width: 98.5%;
+    padding: 60px 0 42.6% 0;
+}
+
+.wrapper_sub_first {
+    background-color: red;
+    margin-top: -60px;
+    padding: 15px;
+}
+
+.wrapper_sub_second_pos {
+    margin-left: 1%;
+    margin-top: 1%;
+    /* margin-bottom: 6%; */
+}
+
+.wrapper_sub_second #speaker {
+    width: 50px;
+}
+
+.wrapper_sub_second #speaker_title {
+    margin-left: 13px;
+    font-weight: 700;
+}
+
+button {
+    font-weight: 800;
+}
+
+h1{
+    position: sticky;
+    top: 0;
+      
+    color: black;
+    font-family: arial;
+    /*text-decoration:underline;*/
+    background-color: rgb(255, 216, 1);;
+}
+h3{
+    font-family: arial;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* p{
+    column-count: 2;
+} */
+
+label1{
+    font-weight: none;
+    font-family: arial;
+    font-size: 15px;
+}
+label2{
+    color: red;
+    font-weight: bold;
+    font-family: arial;
+    font-size: 15px;
+}
+label3{
+    font-family: arial;
+    font-size: 15px;
+}
+
+input{
+    outline: 0;
+    border-width: 0 0 1px;
+    background-color: rgb(255, 255, 224);
+    line-height: 2;
+    font-size: 23px;
+    width: 300px;
+    padding: 0 20px;
+    border-bottom: 1px solid black;
+}
