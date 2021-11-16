@@ -31,7 +31,7 @@
                                 <br><br><br><br><br><br><br><br><br>
                                 <p align="right" style="margin-right: 3%">
                                     <button type="submit" class="btn btn-secondary">Cancel</button>
-                                    <button type="submit" class="btn btn-primary" style="padding: 6px 21px;">Post</button>
+                                    <button type="submit" class="btn btn-primary" style="padding: 6px 21px;">Join</button>
                                 </p>
                             </form>
                         </div>
