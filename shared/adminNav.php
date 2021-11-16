@@ -4,6 +4,15 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="../css/globalNav.css" />
       <link rel="stylesheet" href="../css/admin/adminDropNav.css" />
+      <style>
+        .dropdown-content {
+          margin-left: 0;
+        }
+        
+        .dropdown {
+          margin-top: 0;
+        }
+      </style>
     </head>
     <body>
       <div class="topnav">
@@ -18,7 +27,7 @@
             <a class="creation_acc_stud" href="#" ><p>Register For Student</p></a>
           </div>
         </div>
-        <a href="#news"><p>LOGOUT</p></a>
+        <a href="#news" style="background-color: #FBB117;"><p>LOGOUT</p></a>
       </div>
     </body>
   </html>

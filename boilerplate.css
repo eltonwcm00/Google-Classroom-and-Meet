@@ -1,0 +1,41 @@
+body {
+    background-color: green;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    background-color: black;
+    margin-top: 10px;
+    /*************************/
+}
+.wrapper_sub {
+    background-color: white;
+    max-width: 98.5%;
+    padding: 60px 0 42.6% 0;
+}
+
+.wrapper_sub_first {
+    background-color: red;
+    margin-top: -60px;
+    padding: 15px;
+}
+
+.wrapper_sub_second_pos {
+    margin-left: 1%;
+    margin-top: 1%;
+    /* margin-bottom: 6%; */
+}
+
+.wrapper_sub_second #speaker {
+    width: 50px;
+}
+
+.wrapper_sub_second #speaker_title {
+    margin-left: 13px;
+    font-weight: 700;
+}
+
+/* customised css of a global item */
+.topnav {
+    padding-top: 58px;
+}
