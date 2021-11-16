@@ -46,7 +46,7 @@
                                 </div> 
                                 <p align="right" style="margin-right: 3%; margin-top: 5%;">
                                     <button type="submit" class="btn btn-secondary">Cancel</button>
-                                    <button type="submit" class="btn btn-primary" style="padding: 6px 21px;">Sync</button>
+                                    <button type="submit" class="btn btn-primary" style="padding: 6px 21px; background-color: #52D017">Accept</button>
                                 </p>
                            </form>   
                         </div>
