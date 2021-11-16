@@ -1,0 +1,58 @@
+body {
+    background-color: green;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    background-color: black;
+    margin-top: 10px;
+    /*************************/
+}
+.wrapper_sub {
+    background-color: white;
+    max-width: 98.5%;
+    padding: 60px 0 42.6% 0;
+}
+
+.wrapper_sub_first {
+    background-color: red;
+    margin-top: -60px;
+    padding: 15px;
+}
+
+.wrapper_sub_second_pos {
+    margin-left: 1%;
+    margin-top: 1%;
+    /* margin-bottom: 6%; */
+}
+
+.wrapper_sub_second #speaker {
+    width: 50px;
+}
+
+.wrapper_sub_second #speaker_title {
+    margin-left: 13px;
+    font-weight: 700;
+}
+ h2, h4, h3 {
+     font-weight: bold;
+ }
+
+ h5#left {
+     color: #808080;
+     font-weight: normal;
+ }
+
+ label {
+    background-color: #87CEFA;
+    /* margin-top: 6%; */
+    width: 84%;
+    padding-bottom: 21px;    
+    padding-right: 200px;
+    white-space: nowrap;
+    padding-left: 10px;
+ }
+
+ img {
+     margin-bottom: 2%;
+ }
