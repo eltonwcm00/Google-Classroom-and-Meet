@@ -34,7 +34,7 @@ body {
     margin-left: 13px;
     font-weight: 700;
 }
- h2, h4, h3 {
+ h2, h4, h3, label {
      font-weight: bold;
  }
 

@@ -25,7 +25,7 @@
                         </div>
                         <div class="wrapper_sub_second wrapper_sub_second_pos">
                            <form method="POST">
-                            <h2>Synchronize Calendar</h2>
+                           <div class="row" style="margin-left:0;"><h2>Synchronize Calender</h2>&emsp;<img src="../pic/calender.png" width="45px"; height="45px;" /></div>
                                 <div class="col">
                                     <label class="container"><br> Meet Title : Lecture <br> Meet Link : meet.google.com/lee-hae-cha
                                         <input type="checkbox" checked="checked">
