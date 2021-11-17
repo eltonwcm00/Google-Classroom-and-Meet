@@ -65,7 +65,7 @@
                                     <div class="col col_1">
                                         <img src="../pic/tmr.png" width="32px"/>
                                     </div>
-                                    <div class="col col-6 col_2_left" style="background-color: transparent;">
+                                    <div class="col col-6 col_2_left">
                                         <span>Madam Lee Yoo-Mi</span>
                                         <br/>
                                         <small>Posted a new assignment: OS Assignment Report Submission</small>
@@ -132,7 +132,7 @@
                                     <div class="col col_1">
                                         <img src="../pic/missing.png" width="32px"/>
                                     </div>
-                                    <div class="col col-6 col_2_left" style="background-color: transparent;">
+                                    <div class="col col-6 col_2_left" style="background-color:#FFD4D4;">
                                         <span>Software Engineering Fundamental</span>
                                         <br/>
                                         <small>Tutorial 7</small>
@@ -145,7 +145,7 @@
                                     <div class="col col_1">
                                         <img src="../pic/missing.png" width="32px"/>
                                     </div>
-                                    <div class="col col-6 col_2_left" style="background-color: transparent;">
+                                    <div class="col col-6 col_2_left" style="background-color: #FFD4D4;">
                                         <span>Object-oriented Analysis and Design</span>
                                         <br/>
                                         <small>Assignment 2</small>

@@ -19,23 +19,25 @@
                     .
                 </div>
                 <div class="col">
-                    <div class="wrapper_sub container-xl">
-                        <div class="wrapper_sub_first" style="background-color: #FFD801;">
-                            <h5>TSE2101 - SOFTWARE ENG. FUND <br/>TC3V</h5>
-                        </div>
-                        <div class="wrapper_sub_second wrapper_sub_second_pos">
-                            <label1 for="">Meet Link </label1>
-                            <br><br>
-                            <div class="meet_link_wrap">
-                                <a href="meet.google/abc-def-ghi">https://meet.google.com/znj-uwwb-ztu</a><img src="../pic/copynpaste.png" />
+                    <form method="POST">
+                        <div class="wrapper_sub container-xl">
+                            <div class="wrapper_sub_first" style="background-color: #FFD801;">
+                                <h5>TSE2101 - SOFTWARE ENG. FUND <br/>TC3V</h5>
                             </div>
-                            <br><br><br><br><br><br><br><br><br><br><br><br>
-                            <p align="right" style="margin-top: 6%; margin-right: 3%">
-                                <button type="submit" class="btn btn-secondary">Cancel</button>
-                                <button type="submit" class="btn btn-primary" style="padding: 6px 21px;">Join</button>
-                            </p>
+                            <div class="wrapper_sub_second wrapper_sub_second_pos">
+                                <label1 for="">Meet Link </label1>
+                                <br><br>
+                                <div class="meet_link_wrap">
+                                    <a href="meet.google/abc-def-ghi">https://meet.google.com/znj-uwwb-ztu</a><img src="../pic/copynpaste.png" />
+                                </div>
+                                <br><br><br><br><br><br><br><br><br><br><br><br>
+                                <p align="right" style="margin-top: 6%; margin-right: 3%">
+                                    <button type="submit" class="btn btn-secondary">Cancel</button>
+                                    <button type="submit" class="btn btn-primary" style="padding: 6px 21px;">Join</button>
+                                </p>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
            
