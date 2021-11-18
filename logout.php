@@ -2,6 +2,6 @@
     session_start();
     // Destroy session
     if(session_destroy()) {
-        header("Location: admin/index.php");
+        header("Location: index.php");
     }
 ?>

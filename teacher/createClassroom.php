@@ -1,3 +1,6 @@
+<?php 
+    include("../auth_sessionTeacher.php");
+?>
 <!DOCTYPE html>
 <html>
     <head>
