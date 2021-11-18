@@ -67,7 +67,8 @@
                           if($varEmail == $db_email_login &&  $varPass == $db_password_login) {
                               session_start();
                               $_SESSION["Admin_Email_Address"] = $varEmail;
-                              header('location:homepage.php');        
+                              header('location:homepage.php'); 
+                              exit;       
                           } 
                           else if($varEmail != $db_email_login ||  $varPass != $db_password_login) {  
                               echo "<script> alert('Incorrect credentials, please try again'); </script>";
@@ -76,6 +77,7 @@
                       else {
                           $queryInsert = mysqli_query($con,"INSERT INTO admin(Admin_Email_Address, Admin_Password) VALUES ('$email', '$password')");
                           header('location:index.php');
+                          exit;
                       }
                 } 
                 else {

@@ -1,5 +1,5 @@
 <?php 
-    include("../auth_sessionTeacher.php");
+    include("../auth_sessionTeacher.php");  
 ?>
 <!DOCTYPE html>
 <html>
@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="../css/teacher/createClassroom.css" /> 
     </head>
     <body style="background-color: black;">
-    <div style=""><?php include '../shared/teacherNav.php';?>
+    <?php include '../shared/teacherNav.php';?>
         <div class="wrapper container-xxl">
         <?php include '../shared/teacherSidebar.php';?>
             <div class="row">
@@ -30,23 +30,23 @@
                                     <label3 for="">required</label3>
                                     <label1 for="">)</label1>
                                     <br>
-                                    <input type="text" id="code" name="code">
+                                    <input type="text" id="code" name="nameInput">
                                     <br><br>
                                     <label1 for="">Section</label1>
                                     <br>
-                                    <input type="text" id="section" name="section">
+                                    <input type="text" id="section" name="sectionInput">
                                     <br><br>
                                     <label1 for="">Subject</label1>
                                     <br>
-                                    <input type="text" id="subject" name="subject">
+                                    <input type="text" id="subject" name="subjectInput">
                                     <br><br>
                                     <label1 for="">Room</label1>
                                     <br>
-                                    <input type="text" id="room" name="room">
+                                    <input type="text" id="room" name="roomInput">
                                     <br><br><br><br>
                                     <p align="right" style="margin-right: 3%">
-                                        <button type="submit" class="btn btn-secondary">Cancel</button>
-                                        <button type="submit" class="btn btn-primary" style="padding: 6px 21px;">Create</button>
+                                        <button type="submit" class="btn btn-secondary" name="cancelBtn">Cancel</button>
+                                        <button type="submit" class="btn btn-primary" name="createBtn" style="padding: 6px 21px;">Create</button>
                                     </p>
                                 </form> 
                             </div>
@@ -58,4 +58,46 @@
             </div>
         </div>
     </body>
+    <?php
+
+        $email = $_SESSION['Teacher_Email_Address'];
+
+        require('../db.php');
+
+        if (isset($_POST['cancelBtn'])) {
+            echo "<script type='text/javascript'>
+                    window.top.location='viewClassroomMain.php';
+                  </script>"; 
+            exit;
+        } 
+        else if (isset($_POST['createBtn'])) { 
+            
+            $varName = trim($_POST["nameInput"] ?? "");
+            $varSection = trim($_POST["sectionInput"] ?? "");
+            $varSubject = trim($_POST["subjectInput"] ?? "");
+            $varRoom = trim($_POST["roomInput"] ?? "");
+
+            $queryCheck = mysqli_query($con, "SELECT * FROM classroom where Teacher_Email_Address = '$email' 
+                                              AND Class_Name = '$varName' ");
+                
+            if(mysqli_num_rows($queryCheck) > 0){
+                echo "<script> alert('Classroom is already existed'); </script>";
+            }
+            else {
+                $queryInsert = "INSERT INTO classroom(Teacher_Email_Address, Class_Name, Class_Section, Class_Subject, Class_Room) 
+                                VALUES ('$email', '$varName', '$varSection', '$varSubject', '$varRoom')";
+                $result = mysqli_query($con, $queryInsert);
+
+                if ($result) {
+                    // -> CHANGE*: to the corresponding classroom details path
+                    echo "<script> alert('Classroom is created successfully'); </script>";
+                    echo "<script type='text/javascript'> window.top.location='viewClassroomMain.php'; </script>";
+                    exit;
+                } else {
+                    echo "<script type='text/javascript'> window.top.location='../error.php'; </script>";
+                }
+            }
+
+        }
+    ?>
 </html>

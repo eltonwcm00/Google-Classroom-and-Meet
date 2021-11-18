@@ -42,6 +42,7 @@
 
         if (isset($_POST['cancelbtn'])) {
             header("Location: homepage.php");
+            exit;
         }
         elseif (isset($_POST['createbtn'])) {
             $varEmail = trim($_POST["emailInput"]);
@@ -57,11 +58,12 @@
                 $result = mysqli_query($con, $queryInsert);
 
                 if ($result) {
+                    echo "<script> alert('Account is created successfully'); </script>";
                     header('location:homepage.php');
-                    exit();
+                    exit;
                 } else {
                     header('location:../error.php');
-                    exit();
+                    exit;
                 }
             }
         }
