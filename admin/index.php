@@ -1,5 +1,3 @@
-<!-- -->
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -34,7 +32,7 @@
                             <input type="password" class="form-control" name="passwordInput" id="exampleInputPassword1" required>
                         </div>
                         <div class="form-group">
-                            <button type="submit" name="loginbtn" class="btn btn-warning btn_placement">login</button>
+                            <button type="submit" name="loginbtn" class="btn btn-warning btn_placement">Login</button>
                         </div>
                     </div>
                 </form>
@@ -42,13 +40,11 @@
         </div>
     </body>
     <?php 
-         require('../db.php');
+         require('../db.php');  
 
          echo'<script type="text/JavaScript"> 
-                    alert("LOGIN DETAILS FOR ADMIN\n--------------------------------\nEmail : admin@gmail.com\nPassword : 123");
-                 </script>';
-
-                //  mysqli_query($con,"INSERT INTO admin(Admin_Email_Address, Admin_Password) VALUES ('$email', '$password')");
+                alert("LOGIN DETAILS FOR ADMIN\n--------------------------------\nEmail : admin@gmail.com\nPassword : 123");
+              </script>';
 
          if(isset($_POST["loginbtn"])) {
                 
@@ -56,8 +52,8 @@
                 $password = '123';
                 $email = 'admin@gmail.com';
 
-                $varEmail = $_POST["emailInput"];
-                $varPass = $_POST["passwordInput"];
+                $varEmail = trim($_POST["emailInput"]);
+                $varPass = trim($_POST["passwordInput"]);
 
                 $queryRead = mysqli_query($con,"SELECT Admin_Email_Address, Admin_Password FROM admin WHERE Admin_Email_Address = '$email'");
                 $numrows = mysqli_num_rows($queryRead);
@@ -71,16 +67,18 @@
                           if($varEmail == $db_email_login &&  $varPass == $db_password_login) {
                               session_start();
                               $_SESSION["Admin_Email_Address"] = $varEmail;
-                              header('location:homepage.php');
-                                      
-                          } else if($varEmail != $db_email_login ||  $varPass != $db_password_login) {  
+                              header('location:homepage.php');        
+                          } 
+                          else if($varEmail != $db_email_login ||  $varPass != $db_password_login) {  
                               echo "<script> alert('Incorrect credentials, please try again'); </script>";
                           } 
-                      } else {
+                      } 
+                      else {
                           $queryInsert = mysqli_query($con,"INSERT INTO admin(Admin_Email_Address, Admin_Password) VALUES ('$email', '$password')");
                           header('location:index.php');
                       }
-                } else {
+                } 
+                else {
                     echo "<script> alert('Please don't leave the input blank!'); </script>";
                 }
         }

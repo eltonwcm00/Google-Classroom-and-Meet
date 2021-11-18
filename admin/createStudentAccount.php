@@ -1,3 +1,6 @@
+<?php 
+    include("../auth_session.php");
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,16 +16,12 @@
                    <h1>Create Student's Account</h1>
                    <div class="form_placement form-group ">
                        <label for="exampleInputEmail1">Student's Email address</label>
-                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                       <input type="email" class="form-control" name="emailInput" id="exampleInputEmail1" aria-describedby="emailHelp">
                    </div>
                    <div class="form_placement form-group ">
                        <label for="exampleInputPassword1">Student's Password</label>
-                       <input type="password" class="form-control" id="exampleInputPassword1">
+                       <input type="password" class="form-control" name="passwordInput" id="exampleInputPassword1">
                    </div>
-                   <!-- <div class="form-check">
-                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                       <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                   </div> -->
                    <div class="btn_placement row">
                        <div class="col-md-auto">
                         <button type="submit" class="btn_placement btn btn-secondary" style="background-color: #CCCCCC;">Cancel</button>

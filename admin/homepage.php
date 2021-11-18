@@ -1,3 +1,6 @@
+<?php 
+    include("../auth_session.php");
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,7 +20,6 @@
                 </div>
                 <div class="col">
                     <div class="admin-triangle">
-                        <!-- <img src="../pic/homepage_triangle.png" /> -->
                         .
                     </div>
                 </div>
