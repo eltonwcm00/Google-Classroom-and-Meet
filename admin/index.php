@@ -46,12 +46,12 @@
                 alert("LOGIN DETAILS FOR ADMIN\n--------------------------------\nEmail : admin@gmail.com\nPassword : 123");
               </script>';
 
+        $username = 'admin';
+        $password = '123';
+        $email = 'admin@gmail.com';
+
          if(isset($_POST["loginbtn"])) {
                 
-                $username = 'admin';
-                $password = '123';
-                $email = 'admin@gmail.com';
-
                 $varEmail = trim($_POST["emailInput"]);
                 $varPass = trim($_POST["passwordInput"]);
 

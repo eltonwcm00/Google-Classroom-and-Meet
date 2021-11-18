@@ -1,5 +1,5 @@
 <?php 
-    include("../auth_session.php");
+    include("../auth_sessionAdmin.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -50,8 +50,7 @@
             $queryCheck = mysqli_query($con, "SELECT Teacher_Email_Address, Teacher_Password FROM teacher where Teacher_Email_Address = '$varEmail' ");
             
             if(mysqli_num_rows($queryCheck) > 0){
-                echo '<div class="echo"><small>Email Already exists</small></div>';
-                exit();
+                echo "<script> alert('Email is already existed'); </script>";
             } 
             else {
                 $queryInsert = "INSERT INTO teacher(Teacher_Email_Address, Teacher_Password) VALUES ('$varEmail', '$varPass')";

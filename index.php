@@ -25,19 +25,19 @@
                     <div class="col col-lg-6">
                         <h3>Log In As ?</h3>
                         <div class="row_button">
-                            <button type="submit" class="btn_placement btn btn-primary">New Teacher</button>
-                            <button type="submit" class="btn_placement btn btn-primary">New Student</button>
+                            <button type="submit" name="teacher_btn" class="btn_placement btn btn-primary">Teacher</button>
+                            <button type="submit" name="student_btn" class="btn_placement btn btn-primary">Student</button>
                         </div>
                     </div>
                     <div class="col col-lg-5">
                         <div class="row_form">
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email address:</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input type="email" name="emailInput" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Password:</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <input type="password" name="passwordInput" class="form-control" id="exampleInputPassword1" required>
                             </div>
                         </div>
                     </div>
@@ -45,4 +45,55 @@
             </form>
         </div>
     </body>
+    <?php 
+         require('db.php');
+
+         $varEmail = trim($_POST["emailInput"] ?? "");
+         $varPass = trim($_POST["passwordInput"] ?? "");
+         
+         $db_email_login = "";
+         $db_password_login = 0;
+
+         if(isset($_POST["teacher_btn"]) || isset($_POST["student_btn"])) {
+            
+            if(isset($_POST["teacher_btn"])) {
+                $queryReadTeacher = mysqli_query($con,"SELECT Teacher_Email_Address, Teacher_Password FROM teacher WHERE Teacher_Email_Address = '$varEmail'");
+                $numrows = mysqli_num_rows($queryReadTeacher);
+    
+                if($numrows != 0) {
+                    while($row = mysqli_fetch_assoc($queryReadTeacher)) {
+                        $db_email_login= $row['Teacher_Email_Address'];
+                        $db_password_login = $row['Teacher_Password'];
+                    }
+                    if($varEmail == $db_email_login &&  $varPass == $db_password_login) {
+                        session_start();
+                        $_SESSION["Teacher_Email_Address"] = $varEmail;
+                        header('location:teacher/viewClassroomMain.php');        
+                    } 
+
+                }
+            }
+            
+            else if(isset($_POST["student_btn"])) {
+                $queryReadStudent = mysqli_query($con,"SELECT Student_Email_Address, Student_Password FROM student WHERE Student_Email_Address = '$varEmail'");
+                $numrows = mysqli_num_rows($queryReadStudent);
+    
+                if($numrows != 0) {
+                    while($row = mysqli_fetch_assoc($queryReadStudent)) {
+                        $db_email_login = $row['Student_Email_Address'];
+                        $db_password_login = $row['Student_Password'];
+                    }
+                    if($varEmail == $db_email_login &&  $varPass == $db_password_login) {
+                        session_start();
+                        $_SESSION["Student_Email_Address"] = $varEmail;
+                        header('location:student/viewClassroomMain.php');        
+                    } 
+                }
+            }
+
+            if($varEmail != $db_email_login || $varPass != $db_password_login) {
+                echo "<script> alert('Incorrect credentials, please try again'); </script>";
+            }
+         }
+    ?>
 </html>

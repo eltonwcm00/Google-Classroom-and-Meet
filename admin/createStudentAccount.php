@@ -1,5 +1,5 @@
 <?php 
-    include("../auth_session.php");
+    include("../auth_sessionAdmin.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,7 +12,7 @@
         <?php include '../shared/adminNav.php';?>
         <div class="wrapper container-xxl">
             <div class="wrapper_sub container-xl">
-               <form>
+               <form method="POST">
                    <h1>Create Student's Account</h1>
                    <div class="form_placement form-group ">
                        <label for="exampleInputEmail1">Student's Email address</label>
@@ -24,14 +24,43 @@
                    </div>
                    <div class="btn_placement row">
                        <div class="col-md-auto">
-                        <button type="submit" class="btn_placement btn btn-secondary" style="background-color: #CCCCCC;">Cancel</button>
+                        <button type="submit" class="btn_placement btn btn-secondary" name="cancelbtn" style="background-color: #CCCCCC;">Cancel</button>
                        </div>
                        <div class="col col-lg-2">
-                        <button type="submit" class="btn_placement btn btn-primary" style="float: none !important; margin-top: 1em;">Create</button>
+                        <button type="submit" class="btn_placement btn btn-primary" name="createbtn" style="float: none !important; margin-top: 1em;">Create</button>
                        </div>
                    </div>
                </form>
             </div> 
         </div>
     </body>
+    <?php 
+        require('../db.php');  
+
+        if (isset($_POST['cancelbtn'])) {
+            header("Location: homepage.php");
+        }
+        elseif (isset($_POST['createbtn'])) {
+            $varEmail = trim($_POST["emailInput"]);
+            $varPass = trim($_POST["passwordInput"]);
+           
+            $queryCheck = mysqli_query($con, "SELECT Student_Email_Address, Student_Password FROM student where Student_Email_Address = '$varEmail' ");
+            
+            if(mysqli_num_rows($queryCheck) > 0){
+                echo "<script> alert('Email is already existed'); </script>";
+            } 
+            else {
+                $queryInsert = "INSERT INTO student(Student_Email_Address, Student_Password) VALUES ('$varEmail', '$varPass')";
+                $result = mysqli_query($con, $queryInsert);
+
+                if ($result) {
+                    header('location:homepage.php');
+                    exit();
+                } else {
+                    header('location:../error.php');
+                    exit();
+                }
+            }
+        }
+    ?>
 </html>
