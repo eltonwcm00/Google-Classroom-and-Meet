@@ -111,8 +111,8 @@
           </div>
         </div>
         
-        <a id="main_link" href="#contact"><p>JOIN CLASSROOM</p></a>
-        <a id="main_link" href="#news"><p>LOGOUT</p></a>
+        <a id="main_link" href="joinClassroom.php"><p>JOIN CLASSROOM</p></a>
+        <a id="main_link" href="../logout.php"><p>LOGOUT</p></a>
       </div>
     </body>
   

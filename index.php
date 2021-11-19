@@ -86,6 +86,7 @@
                     if($varEmail == $db_email_login &&  $varPass == $db_password_login) {
                         session_start();
                         $_SESSION["Student_Email_Address"] = $varEmail;
+                        $_SESSION["Student_Password"] = $varPass;
                         header('location:student/viewClassroomMain.php');   
                         exit;     
                     } 

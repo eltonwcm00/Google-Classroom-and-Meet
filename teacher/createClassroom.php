@@ -11,11 +11,11 @@
     <body style="background-color: black;">
     <?php include '../shared/teacherNav.php';?>
         <div class="wrapper container-xxl">
-        <?php include '../shared/teacherSidebar.php';?>
+        <!-- <?php include '../shared/teacherSidebar.php';?> -->
             <div class="row">
-                <div class="col col-lg-2" style="margin-left: -3%;">
+                <!-- <div class="col col-lg-2" style="margin-left: -3%;">
                     .
-                </div>
+                </div> -->
                 <div class="col">
                     <div class="wrapper_sub container-xl">
                         <div class="wrapper_sub_first" style="background-color: #FFD801;">
