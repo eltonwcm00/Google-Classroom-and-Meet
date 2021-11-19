@@ -35,7 +35,7 @@
                                 <label3 for="">Please ask your lecturer for the class code, then enter here.</label3>
                                 <br><br><br><br><br><br><br><br><br>
                                 <p align="right" style="margin-right: 3%">
-                                    <button type="submit" class="btn btn-secondary">Cancel</button>
+                                     <button type="submit" class="btn btn-secondary">Cancel</button>
                                     <button type="submit" class="btn btn-primary" style="padding: 6px 21px;">Post</button>
                                 </p>
                             </form>

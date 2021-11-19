@@ -20,7 +20,7 @@ body {
     background-repeat: no-repeat;
     margin-left: 49%;
     background-size: contain;
-    height: 58%;
+    height: 39% !important;
 }
 
 .classroom {
@@ -41,6 +41,7 @@ body {
 .card {
     border: none;
     border-radius: 18px;
+    z-index: 1;
 }
 
 .card_head {
