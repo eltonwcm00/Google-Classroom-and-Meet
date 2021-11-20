@@ -29,7 +29,7 @@
                                 <br>
                                 <label1 for="">Class Code :</label1>
                                 <br><br>
-                                <input type="text" id="code e" name="code" placeholder="enter class code here...">
+                                <input type="text" id="code e" name="code" placeholder="enter class code here..." required>
                                 <br><br>
                                 <label2 for="">*</label2>
                                 <label3 for="">Please ask your lecturer for the class code, then enter here.</label3>
@@ -50,6 +50,7 @@
         
         $email = $_SESSION['Student_Email_Address'];
         $password = $_SESSION['Student_Password'];
+        $db_code = 0;
 
         require('../db.php');  
 
@@ -76,10 +77,14 @@
                     $result = mysqli_query($con, "INSERT INTO student(Student_Email_Address, Student_Password, Student_ClassroomCode) 
                     VALUES ('$email', '$password', '$enterVarCode')");
 
-                    echo "<script> alert('Congratulation! You have joined this classroom'); </script>";
-
-                    //redirect
+                    echo "<script>  
+                            alert('Congratulation! You have joined this classroom');
+                            window.top.location='viewClassroomMain.php';
+                          </script>";
                 }
+            }
+            else if($varCode != $db_code) {
+                echo "<script> alert('Invalid class code!');</script>";
             }
         }
     ?>

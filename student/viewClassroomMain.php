@@ -1,3 +1,7 @@
+<?php 
+    include("../auth_sessionStudent.php");
+    require('../db.php');
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,6 +19,9 @@
             .topnav {
                 overflow: hidden;
             }
+            .teacher-triangle {
+                height: 44% !important;
+            }
         </style>
         <div class="container-xxl">
             <div class="row">
@@ -23,11 +30,15 @@
                         <div class="row">
                             <div class="classroom">
                                 <div class="col">
-                                   <div class="card" style="width: 18rem; border-radius: 15px;">
+                                   <div class="card" style="width: 18rem; border-radius: 15px; margin-left: 5%;">
                                         <div class="card-header card_head">
                                             TSE2101 - SOFTWARE ENG. FUND<br/>  
                                             <small>
                                                 TC3V
+                                            </small>
+                                            <br/>
+                                            <small>
+                                                <span>Room : JSN0023</span><br/>
                                             </small>
                                             <span class="dot"></span>
                                         </div>
@@ -37,11 +48,15 @@
                                     </div>     
                                 </div>
                                 <div class="col">
-                                    <div class="card" style="width: 18rem; border-radius: 15px;">
+                                    <div class="card" style="width: 18rem; border-radius: 15px; margin: 0 13px;">
                                         <div class="card-header card_head">
                                             TSE2101 - SOFTWARE ENG. FUND<br/>  
                                             <small>
                                                 TC3V
+                                            </small>
+                                            <br/>
+                                            <small>
+                                                <span>Room : JSN0023</span><br/>
                                             </small>
                                             <span class="dot"></span>
                                         </div>
@@ -58,6 +73,52 @@
                     <div class="teacher-triangle">
                         .
                     </div>
+                </div>
+            </div>
+
+            <?php     
+                $email = $_SESSION['Student_Email_Address'];
+
+                $querySelect = mysqli_query($con, "SELECT student.Student_ClassroomCode, student.Student_Email_Address, classroom.class_Code, classroom.Class_Name, classroom.Class_Section,
+                                                          classroom.Class_Subject, classroom.Class_Room
+                                                   FROM classroom RIGHT JOIN student ON classroom.class_Code = student.Student_ClassroomCode 
+                                                   WHERE student.Student_ClassroomCode IS NOT NULL;");
+                $numrow = mysqli_num_rows($querySelect);
+            ?>
+            <div class="row" style="margin-top: 30px;">
+                <div class="classroom" style="margin-left: 5.6%;">
+                    <!-- Dynamic data pulling from backend -->
+                    <?php
+                        if($numrow != 0) {
+
+                        while($row = mysqli_fetch_assoc($querySelect)) {
+                                
+                            $db_className = $row['Class_Name'];
+                            $db_classSection = $row['Class_Section'];
+                            $db_classSubject = $row['Class_Subject'];
+                            $db_classRoom = $row['Class_Room'];
+                    ?>
+                            <div class="col">
+                                <div class="card" style="width: 18rem; border-radius: 15px;">
+                                    <div class="card-header card_head">
+                                        <?php echo $db_className ?><br/>  
+                                        <small>
+                                            <?php echo $db_classSection ?><br/>
+                                        </small>
+                                        <small>
+                                            <span>Room : </span><?php echo $db_classRoom ?><br/>
+                                        </small>
+                                        <span class="dot"></span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text card_text"><?php echo $db_classSubject ?></p>
+                                    </div>
+                                </div>
+                            </div>
+                    <?php 
+                            }
+                        }
+                    ?>
                 </div>
             </div>
         </div>

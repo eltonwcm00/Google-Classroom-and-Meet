@@ -60,7 +60,7 @@
     </body>
     <?php
 
-        $email = $_SESSION['Teacher_Email_Address'];
+        $emailTeacher = $_SESSION['Teacher_Email_Address'];
 
         require('../db.php');
 
@@ -85,7 +85,7 @@
             }
             else {
                 $queryInsert = "INSERT INTO classroom(Teacher_Email_Address, Class_Name, Class_Section, Class_Subject, Class_Room) 
-                                VALUES ('$email', '$varName', '$varSection', '$varSubject', '$varRoom')";
+                                VALUES ('$emailTeacher', '$varName', '$varSection', '$varSubject', '$varRoom')";
                 $result = mysqli_query($con, $queryInsert);
 
                 if ($result) {
