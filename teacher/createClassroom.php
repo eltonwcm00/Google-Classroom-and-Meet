@@ -77,21 +77,34 @@
             $varSubject = trim($_POST["subjectInput"] ?? "");
             $varRoom = trim($_POST["roomInput"] ?? "");
 
-            $queryCheck = mysqli_query($con, "SELECT * FROM classroom where Teacher_Email_Address = '$email' 
+            $queryCheck = mysqli_query($con, "SELECT * FROM classroom where Teacher_Email_Address = '$emailTeacher' 
                                               AND Class_Name = '$varName' ");
                 
             if(mysqli_num_rows($queryCheck) > 0){
                 echo "<script> alert('Classroom is already existed'); </script>";
             }
             else {
+                                
                 $queryInsert = "INSERT INTO classroom(Teacher_Email_Address, Class_Name, Class_Section, Class_Subject, Class_Room) 
                                 VALUES ('$emailTeacher', '$varName', '$varSection', '$varSubject', '$varRoom')";
                 $result = mysqli_query($con, $queryInsert);
 
                 if ($result) {
-                    // -> CHANGE*: to the corresponding classroom details path
-                    echo "<script> alert('Classroom is created successfully'); </script>";
-                    echo "<script type='text/javascript'> window.top.location='viewClassroomMain.php'; </script>";
+
+                    $db_ClassCode = 0;
+
+                    $queryCheck2 = mysqli_query($con, "SELECT Class_Code FROM classroom where Teacher_Email_Address = '$emailTeacher'");
+
+                    while($row = mysqli_fetch_assoc($queryCheck2)) {
+                        $db_ClassCode = $row['Class_Code'];
+                    }
+    
+                    echo $db_ClassCode;
+
+                    echo "<script> 
+                            alert('Classroom is created successfully, the classroom code is '+'$db_ClassCode'); 
+                         </script>";
+                    echo "<script type='text/javascript'> window.top.location='viewAnnoucement.php'; </script>";
                     exit;
                 } else {
                     echo "<script type='text/javascript'> window.top.location='../error.php'; </script>";
