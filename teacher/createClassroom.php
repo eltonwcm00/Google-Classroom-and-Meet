@@ -98,8 +98,6 @@
                     while($row = mysqli_fetch_assoc($queryCheck2)) {
                         $db_ClassCode = $row['Class_Code'];
                     }
-    
-                    echo $db_ClassCode;
 
                     echo "<script> 
                             alert('Classroom is created successfully, the classroom code is '+'$db_ClassCode'); 
