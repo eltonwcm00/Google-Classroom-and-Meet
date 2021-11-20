@@ -7,7 +7,7 @@
     </head>
     <body>
       <div class="topnav">
-        <a id="main_link" class="misc-pic" href="#home"><img src="../pic/loggedin_profilepic.jpg" height="40px" width="40px" /></a>
+        <a id="main_link" class="misc-pic" href="../student/viewClassroomMain.php"><img src="../pic/loggedin_profilepic.jpg" height="40px" width="40px" /></a>
         
         <!-- <a id="main_link" href="#" onclick="myFunction();" class="dropbtn"><img src="../pic/bell.png" height="40px" width="40px" /></a> -->
 

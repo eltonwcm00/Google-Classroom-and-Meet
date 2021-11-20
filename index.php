@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="./css/index.css" /> 
     </head>
     <body style="">
-        <?php include './shared/loginNav.php';?>
+        <?php include 'loginNav.php';?>
         <div class="container-xxl">
             <div class="row">
                 <div class="col-6">

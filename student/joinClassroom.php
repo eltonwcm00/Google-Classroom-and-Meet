@@ -60,13 +60,14 @@
         elseif (isset($_POST['joinBtn'])) {
             $varCode = trim($_POST["code"]);
             
-            $queryRead = mysqli_query($con, "SELECT Class_Code FROM classroom where Class_Code = '$varCode' ");
-            $queryCheck= mysqli_query($con, "SELECT Student_ClassroomCode FROM student where Student_ClassroomCode = '$varCode' ");
+            $queryRead = mysqli_query($con, "SELECT Class_Code FROM classroom WHERE Class_Code = '$varCode' ");
+            $queryCheck= mysqli_query($con, "SELECT Student_ClassroomCode FROM student 
+                                             WHERE Student_ClassroomCode = '$varCode' AND Student_Email_Address = '$email' ");
             
             while($row = mysqli_fetch_assoc($queryRead)) {
                 $db_code = $row['Class_Code'];
             }
-            if($varCode == $db_code) { 
+            if($varCode == $db_code && $varCode != "") { 
                 
                 if(mysqli_num_rows($queryCheck) > 0){
                     echo "<script> alert('You have already joined this classroom!'); </script>";

@@ -18,41 +18,44 @@
                     <div class="classroom-wrapper">
                         <div class="row">
                             <div class="classroom">
-                                <div class="col">
-                                   <div class="card" style="width: 18rem; border-radius: 15px;">
-                                        <div class="card-header card_head">
-                                            TSE2101 - SOFTWARE ENG. FUND<br/>  
-                                            <small>
-                                                TC3V<br/>
-                                            </small>
-                                            <small>
-                                                <span>Room : JSN0022</span><br/>
-                                            </small>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-text card_text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>     
-                                </div>
-                                <div class="col">
+                                <a href="viewAnnoucement.php" class="clickable-card">
+                                    <div class="col">
                                     <div class="card" style="width: 18rem; border-radius: 15px;">
-                                        <div class="card-header card_head">
-                                            TSE2101 - SOFTWARE ENG. FUND<br/>  
-                                            <small>
-                                                TC3V<br/>
-                                            </small>
-                                            <small>
-                                                <span>Room : JSN0023</span><br/>
-                                            </small>
-                                            <span class="dot"></span>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-text card_text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div> 
-                                </div>
-                                
+                                            <div class="card-header card_head">
+                                                TSE2101 - SOFTWARE ENG. FUND<br/>  
+                                                <small>
+                                                    TC3V<br/>
+                                                </small>
+                                                <small>
+                                                    <span>Room : JSN0022</span><br/>
+                                                </small>
+                                                <span class="dot"></span>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="card-text card_text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            </div>
+                                        </div>     
+                                    </div>
+                                </a>
+                                <a href="viewAnnoucement.php" class="clickable-card">
+                                    <div class="col">
+                                        <div class="card" style="width: 18rem; border-radius: 15px;">
+                                            <div class="card-header card_head">
+                                                TSE2101 - SOFTWARE ENG. FUND<br/>  
+                                                <small>
+                                                    TC3V<br/>
+                                                </small>
+                                                <small>
+                                                    <span>Room : JSN0023</span><br/>
+                                                </small>
+                                                <span class="dot"></span>
+                                            </div>
+                                            <div class="card-body">
+                                                <p class="card-text card_text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </a>
                             </div>
                         </div>
                         <?php     
@@ -74,7 +77,7 @@
                                             $db_classSubject = $row['Class_Subject'];
                                             $db_classRoom = $row['Class_Room'];
                                 ?>
-
+                                        <a href="viewAnnoucement.php" class="clickable-card">
                                             <div class="col">
                                                 <div class="card" style="width: 18rem; border-radius: 15px;">
                                                     <div class="card-header card_head">
@@ -92,6 +95,7 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                        </a>
                                 <?php 
                                         }
                                     }

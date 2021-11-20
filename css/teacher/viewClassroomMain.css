@@ -55,3 +55,8 @@ body {
 .card_text {
     font-size: 13px;
 }
+
+.clickable-card, .clickable-card:hover {
+    text-decoration: none; 
+    color: black;
+}
